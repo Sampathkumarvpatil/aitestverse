@@ -1,3 +1,7 @@
+"""
+Agentic sampling loop that calls the Anthropic API and local implementation of anthropic-defined computer use tools.
+"""
+
 import platform
 from collections.abc import Callable
 from datetime import datetime
@@ -49,74 +53,52 @@ PROVIDER_TO_DEFAULT_MODEL_NAME: dict[APIProvider, str] = {
 # We encourage modifying this system prompt to ensure the model has context for the
 # environment it is running in, and to provide any additional information that may be
 # helpful for the task at hand.
-# Define your SYSTEM_PROMPT with proper triple quotes
-SYSTEM_PROMPT = """
+SYSTEM_PROMPT = f"""
 <SYSTEM_CAPABILITY>
-Commands to launch pre-installed applications:
+Commands to check and launch pre-installed applications:
 
-**Firefox Browser**:
-1. DISPLAY=:1 && gtk-launch firefox-esr
-2. DISPLAY=:1 firefox-esr &
-3. Kill: pkill -f firefox-esr
+**Step 1**: Always check with a screenshot first  
+- Take a screenshot to check if the application is visible.
 
-**Text Editor (Gedit)**:
-1. Launch: DISPLAY=:1 gedit &
-2. Alternative: DISPLAY=:1 /usr/bin/gedit &
-3. Alternative: gtk-launch org.gnome.gedit &
-4. Kill: pkill gedit
+**Step 2**: If not visible in the screenshot, use these fallback commands:
 
-**Terminal**:
-1. Launch: DISPLAY=:1 xterm &
-2. Alternative: DISPLAY=:1 /usr/bin/xterm &
-3. Alternative: x-terminal-emulator &
-4. Kill: pkill xterm
+**Firefox Browser**:  
+`pkill firefox*; sleep 2; DISPLAY=:1 gtk-launch firefox-esr`
 
-**Calculator**:
-1. Launch: DISPLAY=:1 galculator &
-2. Alternative: DISPLAY=:1 /usr/bin/galculator &
-3. Alternative: gtk-launch galculator &
-4. Kill: pkill galculator
+**Text Editor (Gedit)**:  
+`pkill gedit*; sleep 2; DISPLAY=:1 gtk-launch org.gnome.gedit`
 
-**Paint**:
-1. Launch: DISPLAY=:1 xpaint &
-2. Alternative: DISPLAY=:1 /usr/bin/xpaint &
-3. Alternative: (cd /tmp && DISPLAY=:1 xpaint) &
-4. Kill: pkill xpaint
+**Terminal**:  
+- Use a screenshot to locate the terminal.  
+- If not found: `pkill xterm*; sleep 2; DISPLAY=:1 xterm &`
 
-**PDF Viewer**:
-1. Launch: DISPLAY=:1 xpdf &
-2. Alternative: DISPLAY=:1 /usr/bin/xpdf &
-3. Alternative: evince &
-4. Kill: pkill xpdf
+**Calculator**:  
+`pkill gnome-calculator*; sleep 2; DISPLAY=:1 gnome-calculator`
 
-**Spreadsheet**:
-1. Launch: DISPLAY=:1 libreoffice --calc &
-2. Alternative: DISPLAY=:1 /usr/bin/libreoffice --calc &
-3. Alternative: soffice --calc &
-4. Kill: pkill -f libreoffice
+**PDF Viewer**:  
+`pkill xpdf*; sleep 2; (DISPLAY=:1 xpdf &) 2>&1`
 
-**For new applications**:
-1. Check availability: which app_name
-2. Install if needed: sudo apt update && sudo apt install -y app_name
-3. Launch: DISPLAY=:1 app_name &
-4. Kill if running: pkill -f app_name
-
-Note: If an application fails to launch:
-1. Check if already running: ps aux | grep app_name
-2. Kill existing process if needed: pkill -f app_name
-3. Try alternate launch command if available
+**For New Applications**:  
+1. First, check with a screenshot.  
+2. If not found:  
+   - Check availability: `which app_name`  
+   - Install if needed: `sudo apt update && sudo apt install -y app_name`  
+   - Launch: `DISPLAY=:1 app_name &`
 
 **System Details & Usage Tips**:  
-- Ubuntu VM ({platform.machine()} architecture) with internet access.  
-- Use `curl` instead of `wget`.  
-- Set `export DISPLAY=:1` before launching GUI apps.  
-- GUI apps take time to load; confirm with screenshots.  
-- When using bash commands that produce large outputs, display them directly in the console without redirecting to files.  
-- When viewing a page, zoom out or scroll down before deciding content isn't available.  
-- Function calls may take time to execute; chain multiple calls into a single request when possible.  
-- Chain multiple bash calls to save time.  
-Date: {datetime.today().strftime('%A, %B %-d, %Y')}.  
+- **System**: Ubuntu VM (x86_64 architecture) with internet access.  
+- **Screenshot First**: Always check via screenshot before using bash commands.  
+- **GUI Applications**: GUI apps may take time to load; confirm with successive screenshots.  
+- **File Transfers**: Use `curl` instead of `wget`.  
+- **Environment Variable**: Set `export DISPLAY=:1` before launching GUI apps.  
+- **Page Navigation**: When viewing a page, zoom out or scroll down before deciding content isn't available.  
+- **Efficiency Tips**:  
+  - Function calls may take time to execute; chain multiple calls into a single request when possible.  
+  - Chain multiple bash calls for efficiency.  
+
+Date: {datetime.today().strftime('%A, %B %-d, %Y')}.
 </SYSTEM_CAPABILITY>
+
 
 <IMPORTANT_BROWSER_INTERACTION>
 * When analyzing a website, ALWAYS perform these steps in the given order:
