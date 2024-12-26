@@ -14,8 +14,6 @@
 
 ## ✨ Features
 
-<div align="center">
-
 | Feature | Description |
 |---------|------------|
 | 🔄 **API TestVerse** | Test API performance with natural language |
@@ -23,8 +21,6 @@
 | 📊 **ETL TestVerse** | Validate data transformations seamlessly |
 | 🎯 **JIRA Integration** | Manage tickets using plain English |
 | ⚡ **Automation** | Automate workflows with simple commands |
-
-</div>
 
 ---
 
