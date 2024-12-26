@@ -173,7 +173,7 @@ Add to `claude_desktop_config.json`:
 - ⏱️ Claude Desktop: Maximum 3 minutes
 - 🔄 For longer tests:
   - Use AI TestVerse Cloud
-  - Export K6 code and run locally
+  - In Claude Desktop, for example, you can mention: Provide k6 code to simulate 1000 users for 5 minutes (use k6 code for any use case lasting more than 3 minutes) and run locally
 
 ### 🚀 Running K6 Tests Locally
 ```bash
