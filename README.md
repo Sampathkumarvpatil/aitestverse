@@ -1,47 +1,68 @@
-## AI TestVerse
+<div align="center">
 
-Natural Language Powered Testing Platform for writing tests in plain English. Describe what you want to test, and our AI understands and executes your requirements.
+# 🚀 AI TestVerse
 
-## Features
+<img src="https://img.shields.io/badge/version-1.0.0-blue.svg" alt="version"/>
+<img src="https://img.shields.io/badge/license-MIT-green.svg" alt="license"/>
+<img src="https://img.shields.io/badge/npm-%3E%3D%206.0.0-blue.svg" alt="npm"/>
+<img src="https://img.shields.io/badge/node-%3E%3D%2014.0.0-blue.svg" alt="node"/>
 
-- **API TestVerse**: Test API performance and functionality using natural language
-- **Web Performance Testing**: Analyze website performance with simple commands
-- **ETL TestVerse**: Validate data transformations and quality checks  
-- **JIRA Integration**: Manage JIRA tickets effortlessly
-- **Automation Testing**: Automate testing workflows with natural language
+> 🤖 Write Tests in Plain English, Let AI Handle the Rest
 
-## Prerequisites
+</div>
+
+---
+
+## ✨ Features
+
+<div align="center">
+
+| Feature | Description |
+|---------|------------|
+| 🔄 **API TestVerse** | Test API performance with natural language |
+| 🌐 **Web Testing** | Analyze website performance effortlessly |
+| 📊 **ETL TestVerse** | Validate data transformations seamlessly |
+| 🎯 **JIRA Integration** | Manage tickets using plain English |
+| ⚡ **Automation** | Automate workflows with simple commands |
+
+</div>
+
+## 🛠️ Prerequisites
+
+![Tech Stack](https://img.shields.io/badge/Tech%20Stack-Modern-blue)
 
 - Node.js ≥ 14.0.0
 - npm (comes with Node.js)
 - Claude Desktop application
 
-## Installation Methods
+## 💫 Installation Methods
 
-### 1. AI TestVerse Cloud
-For enterprise installations with VPN access and enhanced security, contact us directly.
+### 🏢 1. AI TestVerse Cloud
+> Enterprise-grade with VPN access and enhanced security. Contact us for setup.
 
-### 2. AI TestVerse MCP Installation
+### 🔧 2. AI TestVerse MCP Installation
 
-#### Claude Desktop Configuration Location
-1. Open Claude Desktop
-2. Click ☰ (top-left)
-3. Navigate: File > Settings > Developer > Edit Config
-4. Edit `claude_desktop_config.json`
+#### 📝 Claude Desktop Configuration
+1. Launch Claude Desktop
+2. Click ☰ menu (top-left)
+3. Navigate: `File > Settings > Developer > Edit Config`
+4. Locate `claude_desktop_config.json`
 
-**Important**: After configuration changes:
-- Close Claude Desktop
-- End process in Task Manager
-- Restart application
+> ⚠️ **Important**: After changes
+> - Close Claude Desktop
+> - End process in Task Manager
+> - Restart application
 
-#### Individual Agent Installation
+---
 
-##### API Performance Testing
-```bash
+## 🚀 Quick Installation Guides
+
+### 🔄 API Performance Testing
+\`\`\`bash
 npm install aitestverse-apiperformanceagent
-```
+\`\`\`
 
-```json
+\`\`\`json
 {
   "mcpServers": {
     "aitestverse-api": {
@@ -50,14 +71,14 @@ npm install aitestverse-apiperformanceagent
     }
   }
 }
-```
+\`\`\`
 
-##### Web Performance Testing
-```bash
+### 🌐 Web Performance Testing
+\`\`\`bash
 npm install aitestverse-webperformanceagent
-```
+\`\`\`
 
-```json
+\`\`\`json
 {
   "mcpServers": {
     "aitestverse-web": {
@@ -66,14 +87,14 @@ npm install aitestverse-webperformanceagent
     }
   }
 }
-```
+\`\`\`
 
-##### ETL Testing
-```bash
+### 📊 ETL Testing
+\`\`\`bash
 npm install aitestverse-etltestingagent
-```
+\`\`\`
 
-```json
+\`\`\`json
 {
   "mcpServers": {
     "aitestverse-etl": {
@@ -82,14 +103,14 @@ npm install aitestverse-etltestingagent
     }
   }
 }
-```
+\`\`\`
 
-##### JIRA Integration
-```bash
+### 🎯 JIRA Integration
+\`\`\`bash
 npm install aitestverse-jiraagent
-```
+\`\`\`
 
-```json
+\`\`\`json
 {
   "mcpServers": {
     "aitestverse-jira": {
@@ -98,14 +119,14 @@ npm install aitestverse-jiraagent
     }
   }
 }
-```
+\`\`\`
 
-##### Automation Testing
-```bash
+### ⚡ Automation Testing
+\`\`\`bash
 npm install aitestverse-autoagent
-```
+\`\`\`
 
-```json
+\`\`\`json
 {
   "mcpServers": {
     "aitestverse-auto": {
@@ -114,12 +135,12 @@ npm install aitestverse-autoagent
     }
   }
 }
-```
+\`\`\`
 
-#### Complete Configuration
+## 🔗 Complete Configuration
 Add to `claude_desktop_config.json`:
 
-```json
+\`\`\`json
 {
   "mcpServers": {
     "aitestverse-api": {
@@ -144,19 +165,19 @@ Add to `claude_desktop_config.json`:
     }
   }
 }
-```
+\`\`\`
 
-## Limitations
+## ⚠️ Limitations
 
 ### API Testing Duration
-- Claude Desktop: Maximum 3 minutes
-- For longer tests:
+- ⏱️ Claude Desktop: Maximum 3 minutes
+- 🔄 For longer tests:
   - Use AI TestVerse Cloud
   - Export K6 code and run locally
 
-### Running K6 Tests Locally
-```bash
-# Install
+### 🚀 Running K6 Tests Locally
+\`\`\`bash
+# Install K6
 npm install -g k6
 
 # Basic run
@@ -167,20 +188,35 @@ k6 run --duration 10m test-script.js
 
 # With users
 k6 run --vus 10 --duration 5m test-script.js
-```
+\`\`\`
 
-## Quick Start
-1. Select testing domain
-2. Install agent & configure
-3. Write test in English
-4. Execute and review results
+## 🎯 Quick Start
+1. 📋 Select testing domain
+2. ⚙️ Install agent & configure
+3. ✍️ Write test in English
+4. 🚀 Execute and review results
 
-## Documentation
-- [API TestVerse](https://chatbotmaindocuments.s3.us-east-1.amazonaws.com/AI+API+TestVerse/index.html)
-- [Web TestVerse](https://chatbotmaindocuments.s3.us-east-1.amazonaws.com/AI+Web+Testverse/index.html)
-- [ETL TestVerse](https://chatbotmaindocuments.s3.us-east-1.amazonaws.com/AI+ETL+TestVerse/index.html)
-- [JIRA TestVerse](https://chatbotmaindocuments.s3.us-east-1.amazonaws.com/AI+Jira+TestVerse/index.html)
-- [AI TestVerse Platform](https://chatbotmaindocuments.s3.us-east-1.amazonaws.com/AI+TestVerse.html)
+## 📚 Documentation
 
-## License
+<div align="center">
+
+| Service | Documentation |
+|---------|---------------|
+| 🚀 Platform Guide | [View Docs](https://chatbotmaindocuments.s3.us-east-1.amazonaws.com/AI+TestVerse.html) |
+| 🔄 API TestVerse | [View Docs](https://chatbotmaindocuments.s3.us-east-1.amazonaws.com/AI+API+TestVerse/index.html) |
+| 🌐 Web TestVerse | [View Docs](https://chatbotmaindocuments.s3.us-east-1.amazonaws.com/AI+Web+Testverse/index.html) |
+| 📊 ETL TestVerse | [View Docs](https://chatbotmaindocuments.s3.us-east-1.amazonaws.com/AI+ETL+TestVerse/index.html) |
+| 🎯 JIRA TestVerse | [View Docs](https://chatbotmaindocuments.s3.us-east-1.amazonaws.com/AI+Jira+TestVerse/index.html) |
+
+
+</div>
+
+---
+
+<div align="center">
+
+### 🌟 Ready to revolutionize your testing? Get started now! 
+
 © 2024 AI TestVerse. All rights reserved.
+
+</div>
