@@ -26,6 +26,20 @@
 
 </div>
 
+---
+
+## 📚 Documentation
+
+| **Service**            | **Description**               | **Documentation**                                                                                                     |
+|-------------------------|-------------------------------|-----------------------------------------------------------------------------------------------------------------------|
+| 🔄 **API TestVerse**    | API Performance Testing       | [![View Docs](https://img.shields.io/badge/View-Docs-blue)](https://chatbotmaindocuments.s3.us-east-1.amazonaws.com/AI+API+TestVerse/index.html)  |
+| 🌐 **Web TestVerse**    | Web Performance Testing       | [![View Docs](https://img.shields.io/badge/View-Docs-blue)](https://chatbotmaindocuments.s3.us-east-1.amazonaws.com/AI+Web+Testverse/index.html) |
+| 📊 **ETL TestVerse**    | Data Transformation Testing   | [![View Docs](https://img.shields.io/badge/View-Docs-blue)](https://chatbotmaindocuments.s3.us-east-1.amazonaws.com/AI+ETL+TestVerse/index.html) |
+| 🎯 **JIRA TestVerse**   | JIRA Automation               | [![View Docs](https://img.shields.io/badge/View-Docs-blue)](https://chatbotmaindocuments.s3.us-east-1.amazonaws.com/AI+Jira+TestVerse/index.html) |
+| 🚀 **Platform Guide**   | Complete Platform Documentation | [![View Docs](https://img.shields.io/badge/View-Docs-blue)](https://chatbotmaindocuments.s3.us-east-1.amazonaws.com/AI+TestVerse.html)           |
+
+---
+
 ## 🛠️ Prerequisites
 
 ![Tech Stack](https://img.shields.io/badge/Tech%20Stack-Modern-blue)
@@ -33,6 +47,8 @@
 - Node.js ≥ 14.0.0
 - npm (comes with Node.js)
 - Claude Desktop application
+
+---
 
 ## 💫 Installation Methods
 
@@ -136,36 +152,7 @@ Configuration:
 }
 ```
 
-## 🔗 Complete Configuration
-
-Add to `claude_desktop_config.json`:
-
-```json
-{
-  "mcpServers": {
-    "aitestverse-api": {
-      "command": "npx",
-      "args": ["-y", "aitestverse-apiperformanceagent"]
-    },
-    "aitestverse-web": {
-      "command": "npx",
-      "args": ["-y", "aitestverse-webperformanceagent"]
-    },
-    "aitestverse-etl": {
-      "command": "npx",
-      "args": ["-y", "aitestverse-etltestingagent"]
-    },
-    "aitestverse-jira": {
-      "command": "npx",
-      "args": ["-y", "aitestverse-jiraagent"]
-    },
-    "aitestverse-auto": {
-      "command": "npx",
-      "args": ["-y", "aitestverse-autoagent"]
-    }
-  }
-}
-```
+---
 
 ## ⚠️ Limitations
 
@@ -196,99 +183,6 @@ With users:
 ```bash
 k6 run --vus 10 --duration 5m test-script.js
 ```
-
-## 🎯 Quick Start
-1. 📋 Select testing domain
-2. ⚙️ Install agent & configure
-3. ✍️ Write test in English
-4. 🚀 Execute and review results
-
-## 📚 Documentation
-
-|
- Service 
-|
- Description 
-|
- Documentation 
-|
-|
----------
-
- 🔄 
-**
-API TestVerse
-**
-|
- API Performance Testing 
-|
-[
-![Docs
-](
-https://img.shields.io/badge/View-Docs-blue
-)
-](https://chatbotmaindocuments.s3.us-east-1.amazonaws.com/AI+API+TestVerse/index.html) 
-|
-|
- 🌐 
-**
-Web TestVerse
-**
-|
- Web Performance Testing 
-|
-[
-![Docs
-](
-https://img.shields.io/badge/View-Docs-blue
-)
-](https://chatbotmaindocuments.s3.us-east-1.amazonaws.com/AI+Web+Testverse/index.html) 
-|
-|
- 📊 
-**
-ETL TestVerse
-**
-|
- Data Transformation Testing 
-|
-[
-![Docs
-](
-https://img.shields.io/badge/View-Docs-blue
-)
-](https://chatbotmaindocuments.s3.us-east-1.amazonaws.com/AI+ETL+TestVerse/index.html) 
-|
-|
- 🎯 
-**
-JIRA TestVerse
-**
-|
- JIRA Automation 
-|
-[
-![Docs
-](
-https://img.shields.io/badge/View-Docs-blue
-)
-](https://chatbotmaindocuments.s3.us-east-1.amazonaws.com/AI+Jira+TestVerse/index.html) 
-|
-|
- 🚀 
-**
-Platform Guide
-**
-|
- Complete Platform Documentation 
-|
-[
-![Docs
-](
-https://img.shields.io/badge/View-Docs-blue
-)
-](https://chatbotmaindocuments.s3.us-east-1.amazonaws.com/AI+TestVerse.html) 
-|
 
 ---
 
