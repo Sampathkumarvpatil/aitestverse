@@ -7,7 +7,7 @@
 <img src="https://img.shields.io/badge/npm-%3E%3D%206.0.0-blue.svg" alt="npm"/>
 <img src="https://img.shields.io/badge/node-%3E%3D%2014.0.0-blue.svg" alt="node"/>
 
-> 🤖 Write Tests in Plain English, Let AI Handle the Rest
+ 🤖 Write Tests in Plain English, Let AI Handle the Rest
 
 </div>
 
