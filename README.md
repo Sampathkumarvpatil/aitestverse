@@ -214,12 +214,7 @@ k6 run --vus 10 --duration 5m test-script.js
 |
 |
 ---------
-|
--------------
-|
----------------
-|
-|
+
  🔄 
 **
 API TestVerse
