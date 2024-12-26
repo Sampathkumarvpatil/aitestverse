@@ -183,13 +183,6 @@ npm install -g k6
 # Basic run
 k6 run test-script.js
 
-# With duration
-k6 run --duration 10m test-script.js
-
-# With users
-k6 run --vus 10 --duration 5m test-script.js
-```
-
 ## 🎯 Quick Start
 1. 📋 Select testing domain
 2. ⚙️ Install agent & configure
