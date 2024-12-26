@@ -176,12 +176,26 @@ Add to `claude_desktop_config.json`:
   - In Claude Desktop, for example, you can mention: Provide k6 code to simulate 1000 users for 5 minutes (use k6 code for any use case lasting more than 3 minutes) and run locally
 
 ### 🚀 Running K6 Tests Locally
-```bash
-# Install K6
-npm install -g k6
 
-# Basic run
+Install K6:
+```bash
+npm install -g k6
+```
+
+Basic run:
+```bash
 k6 run test-script.js
+```
+
+With duration:
+```bash
+k6 run --duration 10m test-script.js
+```
+
+With users:
+```bash
+k6 run --vus 10 --duration 5m test-script.js
+```
 
 ## 🎯 Quick Start
 1. 📋 Select testing domain
@@ -191,17 +205,61 @@ k6 run test-script.js
 
 ## 📚 Documentation
 
-<div align="center">
-
-| Service | Documentation |
-|---------|---------------|
-| 🚀 Platform Guide | [View Docs](https://chatbotmaindocuments.s3.us-east-1.amazonaws.com/AI+TestVerse.html) |
-| 🔄 API TestVerse | [View Docs](https://chatbotmaindocuments.s3.us-east-1.amazonaws.com/AI+API+TestVerse/index.html) |
-| 🌐 Web TestVerse | [View Docs](https://chatbotmaindocuments.s3.us-east-1.amazonaws.com/AI+Web+Testverse/index.html) |
-| 📊 ETL TestVerse | [View Docs](https://chatbotmaindocuments.s3.us-east-1.amazonaws.com/AI+ETL+TestVerse/index.html) |
-| 🎯 JIRA TestVerse | [View Docs](https://chatbotmaindocuments.s3.us-east-1.amazonaws.com/AI+Jira+TestVerse/index.html) |
-
-</div>
+|
+ Service 
+|
+ Documentation 
+|
+|
+---------
+|
+---------------
+|
+|
+ 🔄 API TestVerse 
+|
+[
+View Docs
+](
+https://chatbotmaindocuments.s3.us-east-1.amazonaws.com/AI+API+TestVerse/index.html
+)
+|
+|
+ 🌐 Web TestVerse 
+|
+[
+View Docs
+](
+https://chatbotmaindocuments.s3.us-east-1.amazonaws.com/AI+Web+Testverse/index.html
+)
+|
+|
+ 📊 ETL TestVerse 
+|
+[
+View Docs
+](
+https://chatbotmaindocuments.s3.us-east-1.amazonaws.com/AI+ETL+TestVerse/index.html
+)
+|
+|
+ 🎯 JIRA TestVerse 
+|
+[
+View Docs
+](
+https://chatbotmaindocuments.s3.us-east-1.amazonaws.com/AI+Jira+TestVerse/index.html
+)
+|
+|
+ 🚀 Platform Guide 
+|
+[
+View Docs
+](
+https://chatbotmaindocuments.s3.us-east-1.amazonaws.com/AI+TestVerse.html
+)
+|
 
 ---
 
@@ -210,5 +268,4 @@ k6 run test-script.js
 ### 🌟 Ready to revolutionize your testing? Get started now! 
 
 © 2024 AI TestVerse. All rights reserved.
-
 </div>
