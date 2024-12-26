@@ -12,6 +12,8 @@
 
 ---
 
+<div align="center">
+
 ## ✨ Features
 
 | Feature | Description |
@@ -28,11 +30,14 @@
 
 | **Service**            | **Description**               | **Documentation**                                                                                                     |
 |-------------------------|-------------------------------|-----------------------------------------------------------------------------------------------------------------------|
+| 🚀 **Platform Guide**   | Complete Platform Documentation | [![View Docs](https://img.shields.io/badge/View-Docs-blue)](https://chatbotmaindocuments.s3.us-east-1.amazonaws.com/AI+TestVerse.html)           |
 | 🔄 **API TestVerse**    | API Performance Testing       | [![View Docs](https://img.shields.io/badge/View-Docs-blue)](https://chatbotmaindocuments.s3.us-east-1.amazonaws.com/AI+API+TestVerse/index.html)  |
 | 🌐 **Web TestVerse**    | Web Performance Testing       | [![View Docs](https://img.shields.io/badge/View-Docs-blue)](https://chatbotmaindocuments.s3.us-east-1.amazonaws.com/AI+Web+Testverse/index.html) |
 | 📊 **ETL TestVerse**    | Data Transformation Testing   | [![View Docs](https://img.shields.io/badge/View-Docs-blue)](https://chatbotmaindocuments.s3.us-east-1.amazonaws.com/AI+ETL+TestVerse/index.html) |
 | 🎯 **JIRA TestVerse**   | JIRA Automation               | [![View Docs](https://img.shields.io/badge/View-Docs-blue)](https://chatbotmaindocuments.s3.us-east-1.amazonaws.com/AI+Jira+TestVerse/index.html) |
-| 🚀 **Platform Guide**   | Complete Platform Documentation | [![View Docs](https://img.shields.io/badge/View-Docs-blue)](https://chatbotmaindocuments.s3.us-east-1.amazonaws.com/AI+TestVerse.html)           |
+
+
+</div>
 
 ---
 
@@ -168,16 +173,6 @@ npm install -g k6
 Basic run:
 ```bash
 k6 run test-script.js
-```
-
-With duration:
-```bash
-k6 run --duration 10m test-script.js
-```
-
-With users:
-```bash
-k6 run --vus 10 --duration 5m test-script.js
 ```
 
 ---
