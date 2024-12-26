@@ -3,7 +3,6 @@
 # 🚀 AI TestVerse
 
 <img src="https://img.shields.io/badge/version-1.0.0-blue.svg" alt="version"/>
-<img src="https://img.shields.io/badge/license-MIT-green.svg" alt="license"/>
 <img src="https://img.shields.io/badge/npm-%3E%3D%206.0.0-blue.svg" alt="npm"/>
 <img src="https://img.shields.io/badge/node-%3E%3D%2014.0.0-blue.svg" alt="node"/>
 
@@ -58,11 +57,11 @@
 ## 🚀 Quick Installation Guides
 
 ### 🔄 API Performance Testing
-\`\`\`bash
+```bash
 npm install aitestverse-apiperformanceagent
-\`\`\`
-
-\`\`\`json
+```
+Configuration:
+```json
 {
   "mcpServers": {
     "aitestverse-api": {
@@ -71,14 +70,14 @@ npm install aitestverse-apiperformanceagent
     }
   }
 }
-\`\`\`
+```
 
 ### 🌐 Web Performance Testing
-\`\`\`bash
+```bash
 npm install aitestverse-webperformanceagent
-\`\`\`
-
-\`\`\`json
+```
+Configuration:
+```json
 {
   "mcpServers": {
     "aitestverse-web": {
@@ -87,14 +86,14 @@ npm install aitestverse-webperformanceagent
     }
   }
 }
-\`\`\`
+```
 
 ### 📊 ETL Testing
-\`\`\`bash
+```bash
 npm install aitestverse-etltestingagent
-\`\`\`
-
-\`\`\`json
+```
+Configuration:
+```json
 {
   "mcpServers": {
     "aitestverse-etl": {
@@ -103,14 +102,14 @@ npm install aitestverse-etltestingagent
     }
   }
 }
-\`\`\`
+```
 
 ### 🎯 JIRA Integration
-\`\`\`bash
+```bash
 npm install aitestverse-jiraagent
-\`\`\`
-
-\`\`\`json
+```
+Configuration:
+```json
 {
   "mcpServers": {
     "aitestverse-jira": {
@@ -119,14 +118,14 @@ npm install aitestverse-jiraagent
     }
   }
 }
-\`\`\`
+```
 
 ### ⚡ Automation Testing
-\`\`\`bash
+```bash
 npm install aitestverse-autoagent
-\`\`\`
-
-\`\`\`json
+```
+Configuration:
+```json
 {
   "mcpServers": {
     "aitestverse-auto": {
@@ -135,12 +134,13 @@ npm install aitestverse-autoagent
     }
   }
 }
-\`\`\`
+```
 
 ## 🔗 Complete Configuration
+
 Add to `claude_desktop_config.json`:
 
-\`\`\`json
+```json
 {
   "mcpServers": {
     "aitestverse-api": {
@@ -165,7 +165,7 @@ Add to `claude_desktop_config.json`:
     }
   }
 }
-\`\`\`
+```
 
 ## ⚠️ Limitations
 
@@ -176,7 +176,7 @@ Add to `claude_desktop_config.json`:
   - Export K6 code and run locally
 
 ### 🚀 Running K6 Tests Locally
-\`\`\`bash
+```bash
 # Install K6
 npm install -g k6
 
@@ -188,7 +188,7 @@ k6 run --duration 10m test-script.js
 
 # With users
 k6 run --vus 10 --duration 5m test-script.js
-\`\`\`
+```
 
 ## 🎯 Quick Start
 1. 📋 Select testing domain
@@ -207,7 +207,6 @@ k6 run --vus 10 --duration 5m test-script.js
 | 🌐 Web TestVerse | [View Docs](https://chatbotmaindocuments.s3.us-east-1.amazonaws.com/AI+Web+Testverse/index.html) |
 | 📊 ETL TestVerse | [View Docs](https://chatbotmaindocuments.s3.us-east-1.amazonaws.com/AI+ETL+TestVerse/index.html) |
 | 🎯 JIRA TestVerse | [View Docs](https://chatbotmaindocuments.s3.us-east-1.amazonaws.com/AI+Jira+TestVerse/index.html) |
-
 
 </div>
 
