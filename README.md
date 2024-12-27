@@ -1,12 +1,20 @@
 <div align="center">
 
+<div align="center">
+
 # 🚀 AI TestVerse
+
+</div>
 
 </div>
 
 <div align="center">
 
+<div align="center">
+
 🤖 Write Tests in Plain English, Let AI Handle the Rest
+
+</div>
 
 </div>
 
