@@ -1,7 +1,9 @@
 # 🚀 AI TestVerse
 
 <div align="center">
-<img src="https://img.shields.io/badge/version-1.0.0-blue.svg" alt="version"/> <img src="https://img.shields.io/badge/npm-%3E%3D%206.0.0-blue.svg" alt="npm"/> <img src="https://img.shields.io/badge/node-%3E%3D%2014.0.0-blue.svg" alt="node"/>
+<img src="https://img.shields.io/badge/version-1.0.0-blue.svg" alt="version"/>
+<img src="https://img.shields.io/badge/npm-%3E%3D%206.0.0-blue.svg" alt="npm"/>
+<img src="https://img.shields.io/badge/node-%3E%3D%2014.0.0-blue.svg" alt="node"/>
 </div>
 
 🤖 Write Tests in Plain English, Let AI Handle the Rest
