@@ -1,10 +1,12 @@
+<div align="center">
+
 # 🚀 AI TestVerse
 
-&#x20;&#x20;
+<img src="https://img.shields.io/badge/version-1.0.0-blue.svg" alt="version"/> <img src="https://img.shields.io/badge/npm-%3E%3D%206.0.0-blue.svg" alt="npm"/> <img src="https://img.shields.io/badge/node-%3E%3D%2014.0.0-blue.svg" alt="node"/>
 
 🤖 Write Tests in Plain English, Let AI Handle the Rest
 
-
+</div>
 
 ---
 
@@ -12,14 +14,11 @@
 
 | Feature | Description |
 | ------- | ----------- |
-| 🔄      |             |
-
-| **API TestVerse**       | Test API performance with natural language |
-| ----------------------- | ------------------------------------------ |
-| 🌐 **Web Testing**      | Analyze website performance effortlessly   |
-| 📊 **ETL TestVerse**    | Validate data transformations seamlessly   |
-| 🎯 **JIRA Integration** | Manage tickets using plain English         |
-| ⚡ **Automation**        | Automate workflows with simple commands    |
+| 🔄 API TestVerse | Test API performance with natural language |
+| 🌐 Web Testing | Analyze website performance effortlessly |
+| 📊 ETL TestVerse | Validate data transformations seamlessly |
+| 🎯 JIRA Integration | Manage tickets using plain English |
+| ⚡ Automation | Automate workflows with simple commands |
 
 ---
 
@@ -27,17 +26,15 @@
 
 | **Service**           | **Description**                 | **Documentation** |
 | --------------------- | ------------------------------- | ----------------- |
-| 🚀 **Platform Guide** | Complete Platform Documentation |                   |
-| 🔄 **API TestVerse**  | API Performance Testing         |                   |
-| 🌐 **Web TestVerse**  | Web Performance Testing         |                   |
-| 📊 **ETL TestVerse**  | Data Transformation Testing     |                   |
-| 🎯 **JIRA TestVerse** | JIRA Automation                 |                   |
+| 🚀 **Platform Guide** | Complete Platform Documentation | [View Docs](https://chatbotmaindocuments.s3.us-east-1.amazonaws.com/AI+TestVerse.html) |
+| 🔄 **API TestVerse**  | API Performance Testing         | [View Docs](https://chatbotmaindocuments.s3.us-east-1.amazonaws.com/AI+API+TestVerse/index.html) |
+| 🌐 **Web TestVerse**  | Web Performance Testing         | [View Docs](https://chatbotmaindocuments.s3.us-east-1.amazonaws.com/AI+Web+Testverse/index.html) |
+| 📊 **ETL TestVerse**  | Data Transformation Testing     | [View Docs](https://chatbotmaindocuments.s3.us-east-1.amazonaws.com/AI+ETL+TestVerse/index.html) |
+| 🎯 **JIRA TestVerse** | JIRA Automation                 | [View Docs](https://chatbotmaindocuments.s3.us-east-1.amazonaws.com/AI+Jira+TestVerse/index.html) |
 
 ---
 
 ## 🛠️ Prerequisites
-
-
 
 - Node.js ≥ 14.0.0
 - npm (comes with Node.js)
