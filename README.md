@@ -1,30 +1,21 @@
-<div align="center">
-
-<div align="center">
-
 # 🚀 AI TestVerse
 
-</div>
-
-</div>
-
-<div align="center">
-
-<div align="center">
+&#x20;&#x20;
 
 🤖 Write Tests in Plain English, Let AI Handle the Rest
 
-</div>
 
-</div>
 
 ---
 
 ## ✨ Features
 
-| Feature                 | Description                                |
+| Feature | Description |
+| ------- | ----------- |
+| 🔄      |             |
+
+| **API TestVerse**       | Test API performance with natural language |
 | ----------------------- | ------------------------------------------ |
-| 🔄 **API TestVerse**    | Test API performance with natural language |
 | 🌐 **Web Testing**      | Analyze website performance effortlessly   |
 | 📊 **ETL TestVerse**    | Validate data transformations seamlessly   |
 | 🎯 **JIRA Integration** | Manage tickets using plain English         |
