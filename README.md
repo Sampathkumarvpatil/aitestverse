@@ -1,19 +1,12 @@
-
-<div align="center">
-
 # 🚀 AI TestVerse
 
 <img src="https://img.shields.io/badge/version-1.0.0-blue.svg" alt="version"/>
 <img src="https://img.shields.io/badge/npm-%3E%3D%206.0.0-blue.svg" alt="npm"/>
 <img src="https://img.shields.io/badge/node-%3E%3D%2014.0.0-blue.svg" alt="node"/>
 
- 🤖 Write Tests in Plain English, Let AI Handle the Rest
-
-</div>
+🤖 Write Tests in Plain English, Let AI Handle the Rest
 
 ---
-
-<div align="center">
 
 ## ✨ Features
 
@@ -36,9 +29,6 @@
 | 🌐 **Web TestVerse**    | Web Performance Testing       | [![View Docs](https://img.shields.io/badge/View-Docs-blue)](https://chatbotmaindocuments.s3.us-east-1.amazonaws.com/AI+Web+Testverse/index.html) |
 | 📊 **ETL TestVerse**    | Data Transformation Testing   | [![View Docs](https://img.shields.io/badge/View-Docs-blue)](https://chatbotmaindocuments.s3.us-east-1.amazonaws.com/AI+ETL+TestVerse/index.html) |
 | 🎯 **JIRA TestVerse**   | JIRA Automation               | [![View Docs](https://img.shields.io/badge/View-Docs-blue)](https://chatbotmaindocuments.s3.us-east-1.amazonaws.com/AI+Jira+TestVerse/index.html) |
-
-
-</div>
 
 ---
 
@@ -65,7 +55,7 @@
 3. Navigate: `File > Settings > Developer > Edit Config`
 4. Locate `claude_desktop_config.json`
 
-> ⚠️ **Important**: After changes
+> ⚠️ **Important**: After changes:
 > - Close Claude Desktop
 > - End process in Task Manager
 > - Restart application
@@ -132,11 +122,25 @@ Configuration:
   "mcpServers": {
     "aitestverse-jira": {
       "command": "npx",
-      "args": ["-y", "aitestverse-jiraagent"]
+      "args": [
+        "-y",
+        "--package=aitestverse-jiraagent",
+        "aitestverse-jiraagent"
+      ],
+      "env": {
+        "JIRA_URL": "<JIRA_BASE_URL>",
+        "JIRA_USERNAME": "<YOUR_JIRA_USERNAME>",
+        "JIRA_API_TOKEN": "<YOUR_JIRA_API_TOKEN>"
+      }
     }
   }
 }
 ```
+
+**Parameters:**
+- `<JIRA_BASE_URL>`: Your JIRA instance URL (e.g., `https://your-domain.atlassian.net`).
+- `<YOUR_JIRA_USERNAME>`: The username of your JIRA account (e.g., `your-email@example.com`).
+- `<YOUR_JIRA_API_TOKEN>`: Your JIRA API token. [Learn how to generate your API token](https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/).
 
 ### ⚡ Automation Testing
 ```bash
@@ -178,9 +182,7 @@ k6 run test-script.js
 
 ---
 
-<div align="center">
-
 ### 🌟 Ready to revolutionize your testing? Get started now! 
 
 © 2024 AI TestVerse. All rights reserved.
-</div>
+
