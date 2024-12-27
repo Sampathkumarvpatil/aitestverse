@@ -1,8 +1,6 @@
 # 🚀 AI TestVerse
 
-<img src="https://img.shields.io/badge/version-1.0.0-blue.svg" alt="version"/>
-<img src="https://img.shields.io/badge/npm-%3E%3D%206.0.0-blue.svg" alt="npm"/>
-<img src="https://img.shields.io/badge/node-%3E%3D%2014.0.0-blue.svg" alt="node"/>
+<img src="https://img.shields.io/badge/version-1.0.0-blue.svg" alt="version"/> <img src="https://img.shields.io/badge/npm-%3E%3D%206.0.0-blue.svg" alt="npm"/> <img src="https://img.shields.io/badge/node-%3E%3D%2014.0.0-blue.svg" alt="node"/>
 
 🤖 Write Tests in Plain English, Let AI Handle the Rest
 
@@ -157,6 +155,50 @@ Configuration:
   }
 }
 ```
+
+---
+
+## 🛠️ Overall Configuration
+
+For comprehensive setup, you can define all required configurations in a single JSON object:
+
+```json
+{
+  "mcpServers": {
+    "aitestverse-api": {
+      "command": "npx",
+      "args": ["-y", "aitestverse-apiperformanceagent"]
+    },
+    "aitestverse-web": {
+      "command": "npx",
+      "args": ["-y", "aitestverse-webperformanceagent"]
+    },
+    "aitestverse-etl": {
+      "command": "npx",
+      "args": ["-y", "aitestverse-etltestingagent"]
+    },
+    "aitestverse-jira": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "--package=aitestverse-jiraagent",
+        "aitestverse-jiraagent"
+      ],
+      "env": {
+        "JIRA_URL": "<JIRA_BASE_URL>",
+        "JIRA_USERNAME": "<YOUR_JIRA_USERNAME>",
+        "JIRA_API_TOKEN": "<YOUR_JIRA_API_TOKEN>"
+      }
+    },
+    "aitestverse-auto": {
+      "command": "npx",
+      "args": ["-y", "aitestverse-autoagent"]
+    }
+  }
+}
+```
+
+Replace placeholders like `<JIRA_BASE_URL>`, `<YOUR_JIRA_USERNAME>`, and `<YOUR_JIRA_API_TOKEN>` with your specific values for full system integration.
 
 ---
 
