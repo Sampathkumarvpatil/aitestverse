@@ -1,8 +1,12 @@
+<div align="center">
+
 # 🚀 AI TestVerse
 
 <img src="https://img.shields.io/badge/version-1.0.0-blue.svg" alt="version"/> <img src="https://img.shields.io/badge/npm-%3E%3D%206.0.0-blue.svg" alt="npm"/> <img src="https://img.shields.io/badge/node-%3E%3D%2014.0.0-blue.svg" alt="node"/>
 
 🤖 Write Tests in Plain English, Let AI Handle the Rest
+
+</div>
 
 ---
 
@@ -85,7 +89,7 @@ Configuration:
   "mcpServers": {
     "aitestverse-api": {
       "command": "npx",
-      "args": ["-y", "aitestverse-apiperformanceagent"]
+      "args": ["-y", "aitestverse-apiagent"]
     }
   }
 }
@@ -193,7 +197,7 @@ For comprehensive setup, you can define all required configurations in a single 
   "mcpServers": {
     "aitestverse-api": {
       "command": "npx",
-      "args": ["-y", "aitestverse-apiperformanceagent"]
+      "args": ["-y", "aitestverse-apiagent"]
     },
     "aitestverse-web": {
       "command": "npx",
