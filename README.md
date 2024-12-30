@@ -1,12 +1,8 @@
-<div align="center">
-
 # 🚀 AI TestVerse
 
 <img src="https://img.shields.io/badge/version-1.0.0-blue.svg" alt="version"/> <img src="https://img.shields.io/badge/npm-%3E%3D%206.0.0-blue.svg" alt="npm"/> <img src="https://img.shields.io/badge/node-%3E%3D%2014.0.0-blue.svg" alt="node"/>
 
 🤖 Write Tests in Plain English, Let AI Handle the Rest
-
-</div>
 
 ---
 
@@ -40,6 +36,15 @@
 - npm (comes with Node.js)
 - Claude Desktop application
 
+**Windows Installation Instructions for Node.js:**
+1. Download the Node.js installer for Windows from [Node.js Downloads](https://nodejs.org).
+2. Run the `.msi` file and follow the installation wizard. Ensure you select the option to install `npm`.
+
+Verify installation:
+```bash
+node -v
+npm -v
+```
 ---
 
 ## 💫 Installation Methods
@@ -70,7 +75,7 @@
 ### 🔄 API Performance Testing
 
 ```bash
-npm install aitestverse-apiperformanceagent
+npm install aitestverse-apiagent
 ```
 
 Configuration:
@@ -251,4 +256,3 @@ k6 run test-script.js
 ### 🌟 Ready to revolutionize your testing? Get started now!
 
 © 2024 AI TestVerse. All rights reserved.
-
